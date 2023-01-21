@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+  <title>Multi-step form</title>
+</head>
+<body>
+<section>
+  <div class="container">
+    <div class="gridd">
+<div class="steps">
+<div class="step">
+<h1  class="step1">1</h1>
+<h3>STEP 1</h3>
+<h2>YOUR INFO</h2>
+</div>
+
+<div class="step">
+<h1>2</h1>
+<h3>STEP 2</h3>
+<h2>SELECT PLAN</h2>
+</div>
+
+<div class="step">
+<h1>3</h1>
+<h3>STEP 3</h3>
+<h2>ADD-ONS</h2>
+</div>
+
+<div class="step">
+<h1>4</h1>
+<h3>STEP 4</h3>
+<h2>SUMMARY</h2>
+</div>
+</div>
+
+
+<div class="bodyy">
+<h1>Personal Info</h1>
+<p>please provide your name, email address, and phone number. </p>
+
+<h5>Name</h5>
+<input type="text" name="" value="">
+<br>
+<br>
+<h5>Email Address</h5>
+<input type="text" name="" value="">
+<br>
+<br>
+<h5>Phone Number</h5>
+<input type="text" name="" value="">
+<button onclick="step2()" type="button" name="button">Next Step</button>
+
+</div>
+  </div>
+    </div>
+</section>
+
+
+
+<section class="sectionss section1">
+  <div class="container">
+    <div class="gridd">
+<div class="steps">
+<div class="step">
+<h1>1</h1>
+<h3>STEP 1</h3>
+<h2>YOUR INFO</h2>
+</div>
+
+<div class="step">
+<h1 class="step1">2</h1>
+<h3>STEP 2</h3>
+<h2>SELECT PLAN</h2>
+</div>
+
+<div class="step">
+<h1>3</h1>
+<h3>STEP 3</h3>
+<h2>ADD-ONS</h2>
+</div>
+
+<div class="step">
+<h1>4</h1>
+<h3>STEP 4</h3>
+<h2>SUMMARY</h2>
+</div>
+</div>
+
+
+<div class="bodyy">
+<h1>Select Your Plan</h1>
+<p>You have the option of monthly or yearly billing</p>
+  <div class="container">
+<div class="gridd plans">
+
+<div onclick="plan1()" class="plan plan1">
+<img src="assets/images/icon-arcade.svg" alt="">
+<h2>Arcade</h2>
+<p>$9/mo</p>
+</div>
+
+<div  onclick="plan2()" class="plan plan2">
+  <img src="assets/images/icon-advanced.svg" alt="">
+  <h2>Advanced</h2>
+  <p>$12/mo</p>
+</div>
+
+<div onclick="plan3()" class="plan plan3">
+  <img src="assets/images/icon-pro.svg" alt="">
+  <h2>Pro</h2>
+  <p>$15/mo</p>
+</div>
+</div>
+      </div>
+      <div class="yearly">
+        <span class="monthlyy">Monthly</span>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+            <span class="yearlyy">Yearly</span>
+      </div>
+
+<button onclick="step2()" type="button" name="button">Next Step</button>
+<button onclick="goback1()" class="btnn" type="button" name="button">Go Back</button>
+  </div>
+</section>
+
+
+<section class="sectionss section2">
+  <div class="container">
+    <div class="gridd">
+<div class="steps">
+<div class="step">
+<h1>1</h1>
+<h3>STEP 1</h3>
+<h2>YOUR INFO</h2>
+</div>
+
+<div class="step">
+<h1>2</h1>
+<h3>STEP 2</h3>
+<h2>SELECT PLAN</h2>
+</div>
+
+<div class="step">
+<h1  class="step1">3</h1>
+<h3>STEP 3</h3>
+<h2>ADD-ONS</h2>
+</div>
+
+<div class="step">
+<h1>4</h1>
+<h3>STEP 4</h3>
+<h2>SUMMARY</h2>
+</div>
+</div>
+
+
+<div class="bodyy">
+<h1>Pick add-ons</h1>
+<p>Add-ons help enhance your gaming experience</p>
+
+<div onclick="addPressed1()" class="add add1">
+  <input class="checkbox checkbox1" type="checkbox">
+  <div class="">
+  <h4>Online service</h4>
+  <p>Access to multiplayer games</p>
+    </div>
+        <h5>+$1/mo</h5>
+</div>
+
+<div onclick="addPressed2()" class="add add2">
+  <input class="checkbox checkbox2" type="checkbox">
+    <div class="">
+  <h4>Larger Storage</h4>
+  <p>Extra 1TB of cloud save</p>
+    </div>
+      <h5>+$2/mo</h5>
+</div>
+
+<div onclick="addPressed3()" class="add add3">
+  <input class="checkbox checkbox3" type="checkbox">
+    <div class="">
+  <h4>Customizable profile</h4>
+  <p>Custom theme on your profile</p>
+    </div>
+      <h5>+$2/mo</h5>
+</div>
+
+<br>
+<button onclick="step2()" type="button" name="button">Next Step</button>
+<button onclick="goback2()" class="btnn" type="button" name="button">Go Back</button>
+</div>
+  </div>
+    </div>
+</section>
+
+
+<section class="sectionss section3">
+  <div class="container">
+    <div class="gridd">
+<div class="steps">
+<div class="step">
+<h1>1</h1>
+<h3>STEP 1</h3>
+<h2>YOUR INFO</h2>
+</div>
+
+<div class="step">
+<h1>2</h1>
+<h3>STEP 2</h3>
+<h2>SELECT PLAN</h2>
+</div>
+
+<div class="step">
+<h1>3</h1>
+<h3>STEP 3</h3>
+<h2>ADD-ONS</h2>
+</div>
+
+<div class="step">
+<h1  class="step1">4</h1>
+<h3>STEP 4</h3>
+<h2>SUMMARY</h2>
+</div>
+</div>
+
+
+<div class="bodyy">
+<h1>Finishing Up</h1>
+<p>Double-check everything looks OK before confirming.</p>
+
+<div class="summary">
+<h3 class="planTypeSummary">Enter type</h3> <span class="firstSpan">$0/mo</span>
+<hr>
+<h4 class="addOns1">Services</h4> <span class="otherSpans addprice1">+$0/mo</span>
+<br>
+<br>
+<h4 class="addOns2">Services</h4> <span class="otherSpans addprice2">+$0/mo</span>
+<br>
+<br>
+<h4 class="addOns3">Services</h4> <span class="otherSpans addprice3">+$0/mo</span>
+</div>
+
+<h4 class="total">Total(per month)</h4>  <span class="totall"><b>$<span class="finalprice">0</span>/mo</b></span>
+<br>
+
+<button type="button" name="button">Next Step</button>
+<button onclick="goback3()" class="btnn" type="button" name="button">Go Back</button>
+</div>
+  </div>
+    </div>
+</section>
+<script src="index.js" charset="utf-8"></script>
+</body>
+</html>
